@@ -1,0 +1,14 @@
+QT_QPA_PLATFORM=xcb
+
+If you're not in conda environment, this solution will work best
+
+pip3 install opencv_python
+export QT_QPA_PLATFORM=xcb
+this will work best in the current on terminal only. For permanent change do
+
+echo "export QT_QPA_PLATFORM=xcb" >> ~/.profile
+
+and restart/logout
+
+
+https://github.com/opencv/opencv-python/issues/729
