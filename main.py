@@ -20,8 +20,8 @@ if __name__ == "__main__":
     
     heightImage, widthImage = 800, 2000
 
-    artillery_shell_v0 = 500/np.sqrt(10)
-    artillery_shell_angle = 45
+    artillery_shell_v0 = 161.55
+    artillery_shell_angle = np.degrees(np.arctan(600/1500))
     artillery_shell_initial_x = 0
     artillery_shell_initial_y = 0
     artillery_shell_radius = 2
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     objective_initial_x = 1500
     objective_initial_y = 600
     objective_radius = 10
-    objective_is_movable = False
+    objective_is_movable = True
 
     TIMESTEP = 10 / artillery_shell_v0
 
