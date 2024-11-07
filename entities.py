@@ -53,8 +53,3 @@ class ArtilleryShell(Object):
         
 class Objective(Object):
     pass
-
-if __name__ == "__main__":
-    a = ArtilleryShell(0, 0, 0, 0, 0)
-    print(a.x)
-    
