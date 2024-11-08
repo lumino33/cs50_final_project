@@ -3,7 +3,7 @@ import time
 import numpy as np
   
 from entities import ArtilleryShell, Objective
-from config import TIMESTEP, FPS
+from config import TIMESTEP
 
 if __name__ == "__main__":
     # Get input from user
