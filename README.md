@@ -16,6 +16,10 @@ Example:
 
 ![alt text](images/example.jpg)
 
+Result:
+
+![](images/example.gif)
+
 # 2. Dependencies
     1. Python 3.9 
 
