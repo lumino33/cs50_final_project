@@ -3,6 +3,7 @@ import time
 import numpy as np
   
 from entities import ArtilleryShell, Objective
+from config import TIMESTEP, FPS
 
 if __name__ == "__main__":
     # Get input from user
@@ -18,7 +19,7 @@ if __name__ == "__main__":
     # objective_initial_y = float(input("Tọa độ ban đầu theo phương y của mục tiêu:"))
     # objective_radius = float(input("Bán kính của mục tiêu:"))
     
-    heightImage, widthImage = 800, 2000
+    heightImage, widthImage = 800, 1800
 
     artillery_shell_v0 = 161.55
     artillery_shell_angle = np.degrees(np.arctan(600/1500))
@@ -33,8 +34,6 @@ if __name__ == "__main__":
     objective_initial_y = 600
     objective_radius = 10
     objective_is_movable = True
-
-    TIMESTEP = 10 / artillery_shell_v0
 
     # Initialize objects
     current_time, step = 0 , 0
@@ -124,7 +123,7 @@ if __name__ == "__main__":
                             font, fontScale, color, thickness, cv2.LINE_AA)
         
         image = cv2.putText(background, 
-                            f"Time: {current_time + step * TIMESTEP}", 
+                            f"Time: {current_time}", 
                             (0, 100), 
                             font, fontScale, color, thickness, cv2.LINE_AA)
 
@@ -135,7 +134,7 @@ if __name__ == "__main__":
         if cv2.waitKey(20) & 0xFF == ord('q'):
             break
         if is_collided:
-            time.sleep(2)
+            time.sleep(5)
             break
         if cv2.waitKey(20) & 0xFF == ord('p'):
             time.sleep(2)
