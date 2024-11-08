@@ -12,6 +12,10 @@ Equations:
 
 ![alt text](images/equations.jpg)
 
+Example:
+
+![alt text](images/example.jpg)
+
 # 2. Dependencies
     1. Python 3.9 
 

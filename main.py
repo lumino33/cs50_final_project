@@ -21,17 +21,17 @@ if __name__ == "__main__":
     
     heightImage, widthImage = 800, 1800
 
-    artillery_shell_v0 = 161.55
-    artillery_shell_angle = np.degrees(np.arctan(600/1500))
+    artillery_shell_v0 = 172.969
+    artillery_shell_angle = 45
     artillery_shell_initial_x = 0
     artillery_shell_initial_y = 0
     artillery_shell_radius = 2
     artillery_shell_is_movable = True
 
-    objective_v0 = 0
-    objective_angle = -90
-    objective_initial_x = 1500
-    objective_initial_y = 600
+    objective_v0 = 50
+    objective_angle = 60
+    objective_initial_x = 600
+    objective_initial_y = 500
     objective_radius = 10
     objective_is_movable = True
 
