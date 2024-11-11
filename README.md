@@ -1,6 +1,8 @@
 # cs50_final_project
 A fun visualization based on Opencv about physical motion
 
+Link youtube: https://youtu.be/Wcz9SoOLR00
+
 # 1. Description
 The system describes the trajectory of an artillery shell and an objective under gravity (without air resistance, friction)
 
